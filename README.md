@@ -27,8 +27,9 @@ output = network.process([0, 1])
 print('0 XOR 1 = {}'.format(output))
 ```
 
-The image is a network created by add_layer method in the above code.
-<img src="example-network.png?raw=true" width="450">
+<img src="example-network.png?raw=true" width="600">
+
+The Figure 1 image is a network created by add_layer method in the above example code.
 
 ## Demo
 
