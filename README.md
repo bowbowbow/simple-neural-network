@@ -4,7 +4,29 @@ A simple neural network implementation for AND, OR, and XOR.
 
 - This `neural_network.py` with no more than 120 lines will help you understand how back propagation is used in neural networks.
 
-## Useage
+## Usage
+
+```python
+from neural_network import Network
+
+# When learning XOR operations
+
+network = Network(training_iteration=500000, learning_rate=0.3, error_threshold=0.0001)
+network.add_layer(5, 2)
+network.add_layer(4)
+network.add_layer(1)
+
+network.train([
+    [[0, 0], [0]],
+    [[0, 1], [1]],
+    [[1, 0], [1]],
+    [[1, 1], [0]],
+])
+
+output = network.process([0, 1])
+print('0 XOR 1 = {}'.format(output))
+```
+
 
 ## Demo
 
@@ -54,4 +76,4 @@ iteration: 140368, mse: 9.99975334554e-05
 
 ```
 
-Sometimes, demo scripts fails to learn operation. Because gradient descent method for backprogation can falls into the local optimal value.
+Sometimes, demo scripts fails to learn operations. Because gradient descent method for backprogation can falls into the local optimal value.
