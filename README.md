@@ -80,3 +80,8 @@ iteration: 140368, mse: 9.99975334554e-05
 ```
 
 Sometimes, demo scripts fails to learn operations. Because gradient descent method for backprogation can falls into the local optimal value.
+
+## Reference
+
+- greatcodeclub's neural repository [[github]](https://github.com/greatcodeclub/neural)
+
